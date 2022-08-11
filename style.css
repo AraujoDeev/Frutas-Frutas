@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap");
+
+.cabecalho {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  height: 68px;
+}
+
+.botao-lateral {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+@media screen and (max-width: 597px) {
+  .colheres {
+    font-size: 25px !important;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .cabecalho {
+    margin-right: 16px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div.links {
+    display: none;
+  }
+
+  .botao-lateral {
+    margin-right: 50px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  .botao-lateral div:nth-child(n) {
+    width: 24px;
+    height: 1px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  .botao-lateral div:nth-child(2) {
+    width: 16px;
+  }
+  #menu {
+    display: block;
+    position: fixed;
+    height: 270px;
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color: #4d4d4d;
+    opacity: 0.9;
+    z-index: 3;
+    overflow: hidden auto;
+    transition: width 0.1s;
+  }
+  nav a {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40pt;
+    display: block;
+    text-decoration: none;
+    font-family: "Roboto";
+  }
+  nav a:hover {
+    color: #000000;
+    transform: scale(1.01);
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .quem_somos {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1137px) {
+  p.max-width {
+    color: #fff;
+    font-size: 60px;
+    margin: auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.logo {
+  margin-left: 50px;
+}
+
+.links {
+  margin-right: 50px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #838383;
+  padding: 8px;
+}
+
+.links a:hover {
+  color: #424141;
+}
+
+.conteudo_principal {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("fundo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 468px;
+  position: relative;
+}
+
+.opacity {
+  height: 468px;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.conteudo_secundario {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.conteudo_secundario h2 {
+  color: #8d0606;
+  font-size: 51px;
+  font-weight: 400;
+  font-family: "Pacifico";
+}
+
+.conteudo_secundario h3 {
+  color: #8c8888;
+  opacity: 0.8;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.max-width {
+  color: #fff;
+  font-family: "Pacifico";
+  font-size: 81px;
+  z-index: 2;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
+  gap: 32px;
+  row-gap: 40px;
+  justify-items: center;
+  background-color: #e5e5e5;
+  height: auto;
+  max-width: 100vw;
+  padding: 0 128px 100px 128px;
+}
+
+.card_pratos {
+  background-color: #fff;
+  width: 286px;
+  height: 384px;
+  margin-top: 64px;
+  border: 1px solid #838383;
+  border-radius: 4px;
+}
+
+.card_pratos img {
+  width: 286px;
+  height: 181px;
+}
+
+.conteudo_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  height: 180px;
+}
+
+.conteudo_card input {
+  background-color: #8d0606;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 115px;
+  height: 37px;
+  cursor: pointer;
+}
+
+.conteudo_card input:hover {
+  transform: scale(1.1);
+}
+
+.conteudo_card input:active {
+  background-color: #8c8888;
+  color: #8d0606;
+}
+
+.quem_somos {
+  background-color: #fff;
+  height: 600px;
+  margin-top: 64px;
+  text-align: center;
+  line-height: 64px;
+}
+
+.quem_somos h2 {
+  font-family: "Pacifico";
+  color: #8d0606;
+  font-size: 51px;
+  font-weight: 400;
+}
+
+.quem_somos h3 {
+  font-family: "Roboto";
+  color: #8c8888;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.quem_somos_fotos {
+  margin-top: 64px;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 128px;
+}
+
+.img_conteudo h3 {
+  font-family: "Pacifico";
+  color: #8d0606;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.img_conteudo h4 {
+  font-family: "Roboto";
+  color: #8c8888;
+  font-size: 20px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95px;
+  background-color: #c4c4c4;
+  font-size: 20px;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  display: flex;
+  gap: 16px;
+  right: 32px;
+  top: 30px;
+}
+
+.social img {
+  width: 30px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 2000;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal.mostrar {
+  display: flex;
+}
+
+.secao_receita {
+  display: flex;
+  flex-direction: column;
+}
+
+.receita {
+  max-width: 100%;
+  min-width: 10%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 16px 32px;
+  margin: 0 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+@keyframes animacao {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostrar .receita {
+  animation: animacao 0.3s;
+}
+
+.titulo_receita {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.secao_receita p {
+  font-family: "Roboto";
+  font-size: 32px;
+  margin-left: 16px;
+}
+
+.fechar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fechar button {
+  width: 32px;
+  size: 100px;
+  font-size: 32px;
+  color: #424141;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.titulo_ingredientes {
+  text-align: center;
+  margin-bottom: 32px;
+}

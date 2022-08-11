@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frutas & Frutas | Home</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div>
+        <img src="logo.png" alt="Logo da empresa" class="logo" />
+      </div>
+      <div class="links">
+        <a href="#">Inicio</a>
+        <a href="#">Receitas</a>
+        <a href="#">Quem Somos</a>
+        <a href="#">Comunidade</a>
+      </div>
+      <button class="botao-lateral" onclick="abrirMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <nav id="menu">
+        <a href="#" id="closebtn" onclick="fecharMenu()">&times;</a>
+        <a href="#">Inicio</a>
+        <a href="#">Receitas</a>
+        <a href="#">Quem Somos</a>
+        <a href="#">Comunidade</a>
+      </nav>
+    </header>
+    <section class="conteudo_principal">
+      <div class="opacity"></div>
+      <div class="max-width">
+        <p class="max-width">Reaproveite melhor os alimentos!</p>
+      </div>
+    </section>
+    <div class="conteudo_secundario">
+      <h2>Receitas para economizar e ganhar saúde</h2>
+      <h3>
+        Nossas receitas ajudam você a aproveitar melhor os alimentos,
+        economizar,<br />
+        ganhar tempo e praticidade
+      </h3>
+    </div>
+    <section class="cards">
+      <div class="card_pratos">
+        <img src="primeira.png" alt="" />
+        <div class="conteudo_card">
+          <h4>Tigela de abacate</h4>
+          <p>
+            Receita refrescante e cheia de vitaminas para seu café da manhã.
+          </p>
+          <input type="button" value="Ver receita" class="btn-receita" />
+        </div>
+      </div>
+      <div class="card_pratos">
+        <img src="segunda.png" alt="" />
+        <div class="conteudo_card">
+          <h4>Salada de kiwi</h4>
+          <p>
+            Receita refrescante e cheia de vitaminas para seu café da manhã.
+          </p>
+          <input type="button" value="Ver receita" class="btn-receita" />
+        </div>
+      </div>
+      <div class="card_pratos">
+        <img src="terceira.png" alt="" />
+        <div class="conteudo_card">
+          <h4>Mix de vegetais</h4>
+          <p>
+            Receita refrescante e cheia de vitaminas para seu café da manhã.
+          </p>
+          <input type="button" value="Ver receita" class="btn-receita" />
+        </div>
+      </div>
+      <div class="card_pratos">
+        <img src="quarta.png" alt="" />
+        <div class="conteudo_card">
+          <h4>Pimentões à Juliana</h4>
+          <p>
+            Receita refrescante e cheia de vitaminas para seu café da manhã.
+          </p>
+          <input type="button" value="Ver receita" class="btn-receita" />
+        </div>
+      </div>
+      <div class="card_pratos">
+        <img src="quinta.png" alt="" />
+        <div class="conteudo_card">
+          <h4>Prato oriental</h4>
+          <p>
+            Receita refrescante e cheia de vitaminas para seu café da manhã.
+          </p>
+          <input type="button" value="Ver receita" class="btn-receita" />
+        </div>
+      </div>
+      <div class="card_pratos">
+        <img src="sexta.png" alt="" />
+        <div class="conteudo_card">
+          <h4>Beterrabas assadas</h4>
+          <p>
+            Receita refrescante e cheia de vitaminas para seu café da manhã.
+          </p>
+          <input type="button" value="Ver receita" class="btn-receita" />
+        </div>
+      </div>
+      <div class="card_pratos">
+        <img src="salmão.jfif" alt="" />
+        <div class="conteudo_card">
+          <h4>Salmão Grelhado</h4>
+          <p>
+            Receita refrescante e cheia de vitaminas para seu café da manhã.
+          </p>
+          <input type="button" value="Ver receita" class="btn-receita" />
+        </div>
+      </div>
+      <div class="card_pratos">
+        <img src="tempura.jfif" alt="" />
+        <div class="conteudo_card">
+          <h4>Pimentões à Juliana</h4>
+          <p>
+            Receita refrescante e cheia de vitaminas para seu café da manhã.
+          </p>
+          <input type="button" value="Ver receita" class="btn-receita" />
+        </div>
+      </div>
+    </section>
+    <section class="quem_somos">
+      <div class="texto">
+        <h2>Quem somos</h2>
+        <h3>Conheça a comunidade por trás da iniciativa</h3>
+      </div>
+      <div class="quem_somos_fotos">
+        <div class="img_conteudo">
+          <img src="./mat.png" class="img_quemSomos" alt="" />
+          <h3>Mateus</h3>
+          <h4>Conteúdo</h4>
+        </div>
+        <div class="img_conteudo">
+          <img src="./araujo.png" class="img_quemSomos" alt="" />
+          <h3>Araujo</h3>
+          <h4>Chef de Cozinha</h4>
+        </div>
+        <div class="img_conteudo">
+          <img src="./rubinho.jpg" class="img_quemSomos" alt="" />
+          <h3 class="titulo">Rubinho</h3>
+          <h4>Pequena Produtora</h4>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <h3>Matheus Araujo&reg;</h3>
+      </div>
+      <nav class="social">
+        <a href="https://www.instagram.com/">
+          <img src="./ig.png" alt="Logo Instagram" />
+        </a>
+        <a href="https://www.facebook.com/">
+          <img src="./fb.png" alt="Logo Facebook" />
+        </a>
+      </nav>
+    </footer>
+    <div id="modal-receita" class="modal">
+      <section class="secao_receita">
+        <div class="receita">
+          <div class="fechar">
+            <h3 class="titulo_receita">Modal receita</h3>
+            <button class="fechar">&times;</button>
+          </div>
+          <hr />
+          <p class="titulo_ingredientes"><strong>Ingredientes:</strong></p>
+          <p class="colheres">
+            <strong>*</strong> 3 colheres de sopa de margarina
+          </p>
+          <p class="colheres">
+            <strong>*</strong> 3 colheres de sopa de margarina
+          </p>
+          <p class="colheres">
+            <strong>*</strong> 3 colheres de sopa de margarina
+          </p>
+          <p class="colheres">
+            <strong>*</strong> 3 colheres de sopa de margarina
+          </p>
+          <p class="colheres">
+            <strong>*</strong> 3 colheres de sopa de margarina
+          </p>
+          <p class="colheres">
+            <strong>*</strong> 3 colheres de sopa de margarina
+          </p>
+        </div>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
